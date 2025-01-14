@@ -28,7 +28,13 @@ def rename_cols(rename_df):
 
 """Below is the main code to read the csv files from datastore that are related to the theme "Hospitals" and load them to storage path.
 
-Note: As I dont have any work environment of Azure to load the files, I have saved all the files from data store to my local path.
+**NOTE :**
+
+1. As I dont have any work environment of Azure to load the files, I have saved all the files from data store to my local path.
+
+2. Scheduling the job is pending. As I dont have Azure databricks environment, I am not able to schedule it. This should be a very simply task in Databricks to create a job and schedule it daily. This code should take care of loading only those files that have been modified.
+I have considered the column modifiedDate to track the changes of the file.
+
 
 """
 
